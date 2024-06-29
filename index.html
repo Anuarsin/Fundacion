@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundación Hetzi-Ba</title>
+    <style>body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+    }
+    nav {
+        background-color: #444;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+    }
+    nav a {
+        color: #fff;
+        margin: 0 15px;
+        text-decoration: none;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
+    .container {
+        width: 80%;
+        margin: 20px auto;
+        overflow: hidden;
+    }
+    .content, .sidebar {
+        float: left;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .content {
+        width: 70%;
+    }
+    .sidebar {
+        width: 30%;
+        background-color: #e4e4e4;
+    }
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>FUNDACIÓN HETZI-BA</h1>
+    </header>
+    <nav>
+        <a href="#about">Sobre Nosotros</a>
+        <a href="#programs">Programas</a>
+        <a href="#volunteer">Voluntariado</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+    <div class="container">
+        <section id="about" class="content">
+            <h2>Sobre Nosotros</h2>
+            <p>La FUNDACIÓN HETZI-BA se dedica a proporcionar apoyo y recursos a niños y adultos en situación de vulnerabilidad. Nuestra misión es mejorar la calidad de vida de estas personas a través de diversos programas y actividades.</p>
+        </section>
+        <aside class="sidebar">
+            <h2>Nuestras Causas</h2>
+            <ul>
+                <li>Educación para niños</li>
+                <li>Asistencia médica</li>
+                <li>Programas de alimentación</li>
+                <li>Apoyo psicológico</li>
+            </ul>
+        </aside>
+        <section id="programs" class="content">
+            <h2>Programas</h2>
+            <p>Nuestros programas están diseñados para abordar las necesidades específicas de niños y adultos. Trabajamos en colaboración con diversas organizaciones para asegurar un impacto positivo en la comunidad.</p>
+        </section>
+        <section id="volunteer" class="content">
+            <h2>Voluntariado</h2>
+            <p>Únete a nuestro equipo de voluntarios y ayuda a marcar la diferencia. Ofrecemos diversas oportunidades para que puedas contribuir de manera significativa a nuestra causa.</p>
+        </section>
+        <section id="contact" class="content">
+            <h2>Contacto</h2>
+            <p>Para más información, no dudes en contactarnos a través del siguiente formulario:</p>
+            <form action="#">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Mensaje:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 FUNDACIÓN HETZI-BA. Todos los derechos reservados.</p>
+    </footer>
+    
+</body>
+</html>
