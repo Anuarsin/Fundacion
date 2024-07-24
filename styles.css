@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #555b69;
+    color: #fff;
+}
+
+header {
+    background-color: #555b69;
+    padding: 10px 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.header-right ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-right ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.header-right ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.separator {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    margin: 10px 0;
+}
+
+header h1 {
+    margin: 20px 0 0;
+    font-size: 3.5rem;
+    color: #fff;
+    font-family: 'Libre Baskerville', serif;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.nuestro-equipo {
+    padding: 50px 20px;
+    background-color: #f8f4ec;
+    color: #333;
+    text-align: center;
+}
+
+.nuestro-equipo h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.nuestro-equipo p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.equipo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.miembro {
+    text-align: center;
+    margin: 20px;
+    flex-basis: 200px;
+}
+
+.miembro img {
+    width: 220px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.miembro.arley img {
+    width: 240px;
+    height: 320px;
+}
+
+.miembro.manuel img {
+    width: 200px;
+    height: 280px;
+}
+
+.miembro.kelis img {
+    width: 220px;
+    height: 300px;
+}
+
+.miembro.tu img {
+    width: 260px;
+    height: 340px;
+}
+
+.miembro .info {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.miembro h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.miembro p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    margin: 5px 0 0;
+    color: #666;
+}
+
+.nosotros {
+    padding: 50px 20px;
+    background-color: #555b69;
+    color: #000000;
+    text-align: center;
+}
+
+.nosotros h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.nosotros .esencia {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.nosotros .descripcion {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    margin: 0 auto;
+    max-width: 800px;
+}
