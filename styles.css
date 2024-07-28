@@ -217,6 +217,10 @@ header h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%); /* Safari 3.1+, Chrome */
+    -moz-transform: translate(-50%, -50%); /* Firefox 3.5+ */
+    -ms-transform: translate(-50%, -50%); /* IE 9 */
+    -o-transform: translate(-50%, -50%); /* Opera 10.5+ */
     width: 80%;
     max-width: 600px;
     background-color: #f1f1f1;
@@ -225,6 +229,7 @@ header h1 {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    border-radius: 10px;
 }
 
 .contact-content h2 {
@@ -247,40 +252,44 @@ header h1 {
     cursor: pointer;
 }
 
-#phoneNumber {
-    cursor: pointer;
-    position: relative;
-    color: #000000; 
+.contact-content span.phone-link {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px dashed #333;
     transition: color 0.3s ease;
+    cursor: pointer;
 }
 
-#phoneNumber:hover {
-    color: #00ff00; 
+.contact-content span.phone-link:hover {
+    color: #1ff663; /* Cambiar el color a tu preferencia */
+    border-bottom: 1px solid #1ff663; /* Cambiar el color a tu preferencia */
 }
 
-#phoneNumber::after {
-    content: "Copiar";
-    position: absolute;
-    bottom: -25px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #333;
-    color: #fff;
-    padding: 5px;
-    border-radius: 5px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    white-space: nowrap;
-    pointer-events: none;
-    font-size: 0.9rem;
+.copy-message {
+    display: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #4CAF50;
+    margin-top: 10px;
 }
 
-#phoneNumber:hover::after {
-    opacity: 1;
+.show-message {
+    display: block;
+}
+
+/* Estilos adicionales para garantizar la compatibilidad con diferentes navegadores */
+.contacto {
+    box-sizing: border-box;
+}
+
+.contact-content span.phone-link {
+    display: inline-block;
+    padding: 5px 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 /* Ajustes generales para pantallas pequeñas */
-/* Ajustes generales para pantallas pequeñas */
+
 @media (max-width: 768px) {
     .header-content {
         flex-direction: row;
