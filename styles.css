@@ -224,7 +224,7 @@ header h1 {
     width: 80%;
     max-width: 600px;
     background-color: #f1f1f1;
-    color: #333;
+    color: #0d0d0d;
     text-align: center;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -252,7 +252,8 @@ header h1 {
     cursor: pointer;
 }
 
-.contact-content span.phone-link {
+.contact-content a.email-link,
+.contact-content a.phone-link {
     color: #333;
     text-decoration: none;
     border-bottom: 1px dashed #333;
@@ -260,10 +261,22 @@ header h1 {
     cursor: pointer;
 }
 
-.contact-content span.phone-link:hover {
-    color: #1ff663; /* Cambiar el color a tu preferencia */
-    border-bottom: 1px solid #1ff663; /* Cambiar el color a tu preferencia */
+.contact-content a.email-link:hover,
+.contact-content a.phone-link:hover {
+    color: #ff6347; /* Cambiar el color a tu preferencia */
+    border-bottom: 1px solid #ff6347; /* Cambiar el color a tu preferencia */
 }
+
+.copy-message {
+    display: none;
+    color: green;
+    margin-top: 10px;
+}
+
+.copy-message.show-message {
+    display: block;
+}
+
 
 .copy-message {
     display: none;
@@ -288,7 +301,10 @@ header h1 {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+
+
 /* Ajustes generales para pantallas pequeñas */
+
 @media (max-width: 768px) {
     .header-content {
         flex-direction: row;
@@ -365,3 +381,37 @@ header h1 {
     }
 }
 
+/* Ajustes adicionales para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .header-left h2 {
+        font-size: 0.8rem;
+    }
+
+    .link ul {
+        flex-direction: row;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .nuestro-equipo h2 {
+        font-size: 1.5rem;
+    }
+
+    .nuestro-equipo p {
+        font-size: 0.9rem;
+    }
+
+    .nosotros h2 {
+        font-size: 1.5rem;
+    }
+
+    .nosotros .esencia {
+        font-size: 0.9rem;
+    }
+
+    .nosotros .descripcion {
+        font-size: 0.9rem;
+    }
+}
